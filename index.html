@@ -16,12 +16,11 @@
       <li><a href="ftp://test:password@sisadmin.ru/veb/1.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
       <li><a href="http://example.com#about">Ссылка на фрагмент страницы некоторого сайта</a></li>
       <li><a href="#yakor">Ссылка на якорь с текущей страницы</a></li>
-      <li><a href="http://example.com/?color=black&size=m">Ссылка с двумя параметрами в URL</a></li>
-    
+      <li><a href="http://example.com" target="_blank">Ссылка с двумя параметрами в URL</a></li>
       <li><h3>Список ссылок основной навигации сайта с подписями title:</h3>
     <nav>
       <ul>
-        <li><a href="#321">Начало</a></li>
+        <li><a href="#yakor">Начало</a></li>
         <li><a href="#forma">Форма</a></li>
       </ul>
     </nav>
@@ -56,29 +55,35 @@
     <form action="/" method="POST">
 
       <label>
-        Однострочное текстовое поле:<br/>
+        Введите Ваше имя:
+        <br/>
         <input name="field-name-1"
-          value="начальное значение" />
-      </label><br/>
-
+          value=" "/>
+      </label>
+      <br/>
       <label>
-        Текстовое поле email:<br/>
+        Введите Ваш email:
+        <br/>
         <input name="field-email"
           value="test@example.com"
-          type="email" />
-      </label><br />
+          type="email"/>
+      </label>
+      <br/>
 
       <label>
-        Текстовое поле даты:<br />
+        Введите Вашу дату рождения:
+        <br/>
         <input name="field-date"
-          value="2019-08-13"
-          type="date" />
-      </label><br />
+          value="2002-06-08"
+          type="date"/>
+      </label>
+      <br/>
 
-      <label>
-        Многострочное текстовое поле:<br />
-        <textarea name="field-name-2">начальное значение</textarea>
-      </label><br />
+      Количество конечностей:<br/>
+      <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1" />1</label>
+      <label><input type="radio" name="radio-group-1" value="Значение2"/>12</label><br/>
+
+      
 
       <label>
         Список (combobox):<br />
@@ -90,34 +95,29 @@
       </label><br />
 
       <label>
-        Список (listbox с множественным выбором):
-        <br />
-        <select name="field-name-4[]"
-          multiple="multiple">
-          <option value="Значение1">Метка1</option>
-          <option value="Значение2" selected="selected">Метка2</option>
-          <option value="Значение3" selected="selected">Метка3</option>
+        Сверхспособности:
+        <br/>
+        <select name="field-name-4[]" multiple="multiple">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+          <option value="Значение3" selected="selected">Левитация</option>
         </select>
-      </label><br />
+      </label><br/>
 
-      Радиокнопки:<br />
-      <label><input type="radio" checked="checked"
-        name="radio-group-1" value="Значение1" />
-        Подпись радиокнопки 1</label>
-      <label><input type="radio"
-        name="radio-group-1" value="Значение2" />
-        Подпись радиокнопки 2</label><br />
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2"></textarea>
+      </label><br/>
 
-      Чекбокс:<br />
-      <label><input type="checkbox" checked="checked"
-        name="check-1" />
-        Подпись чекбокса ставим справа</label><br />
+      <label>
+        С контрактом ознакомлен (а):<input type="checkbox" checked="checked" name="check-1"/>
+      </label>
+      <br/>
 
-      Кнопка отправки формы,
-      при нажатии заполненные в форму данные
-      отправятся в формате urlencoded методом
-      POST или GET по адресу URL_отправки_данных:
-      <input type="submit" value="Отправить" />
+      <label> 
+        Отправьте что-то:
+        <input type="submit" value="Отправить" />
+    </label>
     </form>
 </body>
 </html>
