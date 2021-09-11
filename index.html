@@ -5,16 +5,15 @@
     <title>Anastasia Nesnova</title>
 </head>
 <body>
-  <p id="321"></p>
-  <p id="yakor">Якорь с текущей страницы</p>
+  <h1 id="yakor">Задание №1</h1>
   
     <h2>Нумерованный список</h2>
     <p id="num"></p>
     <ol>
       <li><a href="http://example.com">Гиперссылка на главную страницу сайта example.com</a></li>
       <li><a href="https://example.com">Гиперссылка на главную сайта example.com в протоколе https</a></li>
-      <li><a href="ftp://youtube.com/veb/2.txt"></a></li>
-      <li><a href="ftp://test:password@sisadmin.ru/veb/1.txt"></a></li>
+      <li><a href="ftp://youtube.com/veb/2.txt">Ссылка на файл на сервере FTP без авторизации</a></li>
+      <li><a href="ftp://test:password@sisadmin.ru/veb/1.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
       <li><a href="http://example.com#about">Ссылка на фрагмент страницы некоторого сайта</a></li>
       <li><a href="#yakor">Ссылка на якорь с текущей страницы</a></li>
       <li><a href="http://example.com/?color=black&size=m">Ссылка с двумя параметрами в URL</a></li>
@@ -22,8 +21,8 @@
       <li><h3>Список ссылок основной навигации сайта с подписями title:</h3>
     <nav>
       <ul>
-        <li><a href="#321" title="Вверхняя часть страницы">Якорь</a></li>
-        <li><a href="#num" title="Нумерованный список">Нумерованный список</a></li>
+        <li><a href="#321">Начало</a></li>
+        <li><a href="#forma">Форма</a></li>
       </ul>
     </nav>
   </li>
@@ -36,11 +35,12 @@
       Дуб хорошо узнаваем благодаря его плодам, желудям, являющимся, по сути, <a href="https://ru.wikipedia.org/wiki/Орех">орехами</a>.
     </p>
   </li>
-  <li><a href="http://example.com"><img src="_B5AIfxI3RU.jpg" alt="Ссылка картинка"></a>
-  <li><img src="8K6lWemWhiY.jpg" width="300" height="300" usemap="#Navigation" alt="Ссылка с кругом и прямоугольником"></li>
+  <li><a href="http://example.com"><img src="1.jpg" alt="Ссылка картинка"></a>
+  <li>
+    <img src="2.jpg" width="300" height="300" usemap="#Navigation" alt="Ссылка с кругом и прямоугольником">
     <map name="Navigation">
-      <area shape="circle" coords="200,75,50" href="inform.html" >
-      <area shape="rect" coords="25,25,125,125" href="activity.html">
+      <area shape="circle" coords="200,75,50" href="https://github.com" >
+      <area shape="rect" coords="25,25,125,125" href="http://htmlbook.ru">
     </map>
   </li>
   <li><a href="index.html">Относительная на страницу в текущем каталоге</a></li>
@@ -51,7 +51,7 @@
   <li><a href=”/about”>Сокращенную ссылку на внутреннюю</a> </li>
   </ol>
   <br>
-  <h1>Пример формы HTML</h1>
+  <h1 id="forma">Пример формы HTML</h1>
 
     <form action="/" method="POST">
 
